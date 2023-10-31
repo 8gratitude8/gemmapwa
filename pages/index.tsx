@@ -1,104 +1,60 @@
 import { NextPage } from "next";
 import {
-  GlowCard,
-  GlowCardHeader,
-  GlowCardContent,
-} from "../components/ui/glow-card";
-
-const Home: NextPage = () => {
-  return (
-    <div className="bg-background mx-auto p-4 mb-32 md:mb-64">
-      <header className="py-4 text-center">
-        <h1 className="text-4xl font-bold">Fun Games App</h1>
-        <p className="text-lg text-gray-600">
-          Unlock endless fun and challenges
-        </p>
-      </header>
-
-      <section className="text-center my-8">
-        <h2 className="text-3xl font-semibold">Join the Fun!</h2>
-        <p className="text-lg text-gray-600">
-          Sign up now and get 100 free coins to play! Coin purchasing feature
-          coming soon.
-        </p>
-      </section>
-
-      <div className="flex flex-wrap justify-center md:justify-between">
-        <GlowCard className="w-full md:w-1/2 my-8 p-4 rounded">
-          <GlowCardHeader>
-            <h2 className="text-2xl font-semibold">Early Development</h2>
-          </GlowCardHeader>
-          <GlowCardContent>
-            <p className="text-lg">
-              This app is in the early stages of development. Heres what you can
-              expect:
-            </p>
-            <ul className="list-inside list-disc">
-                <li>- Possible bugs and glitches</li>
-                <li>- New features released regularly</li>
-                <li>- Community involvement in feature planning</li>
-                <li>
-                  - We appreciate your understanding and patience as we work to
-                  improve your gaming experience.
-                </li>
-              </ul>
-          </GlowCardContent>
-        </GlowCard>
-
-        <GlowCard className="w-full md:w-1/2 my-8 p-4 rounded">
-          <GlowCardHeader>
-            <h2 className="text-2xl font-semibold">Whats Inside?</h2>
-          </GlowCardHeader>
-          <GlowCardContent>
-            <p className="text-lg">
-              Wondering what kinds of games you can play? Heres a sneak peek:
-            </p>
-            <ul className="list-inside list-disc">
-                <li>- Arcade games</li>
-                <li>- Puzzle games</li>
-                <li>- Strategy games</li>
-                <li>- And much more!</li>
-              </ul>
-          </GlowCardContent>
-        </GlowCard>
-
-        <GlowCard className="w-full md:w-1/2 my-8 p-4 rounded">
-          <GlowCardHeader>
-            <h2 className="text-2xl font-semibold">Purchase Coins</h2>
-          </GlowCardHeader>
-          <GlowCardContent>
-            <p className="text-lg">
-              Ready to level up your gaming? With our in-game currency, you can:
-            </p>
-            <ul className="list-inside list-disc">
-                <li>- Play Games</li>
-                <li>- REDACTED</li>
-                <li>- REDACTED</li>
-                <li>- REDACTED</li>
-              </ul>
-          </GlowCardContent>
-        </GlowCard>
-
-        <GlowCard className="w-full md:w-1/2 my-8 p-4 rounded">
-          <GlowCardHeader>
-            <h2 className="text-2xl font-semibold">Disclaimer</h2>
-          </GlowCardHeader>
-          <GlowCardContent>
-            <p className="text-lg">
-              Please note the following:
-            </p>
-            <ul className="list-inside list-disc">
-                <li>- All in-game purchases are final.</li>
-                <li>- Coins have no real-world value.</li>
-                <li>- Terms and conditions apply.</li>
-                <li>- Play responsibly.</li>
-              </ul>
-          </GlowCardContent>
-        </GlowCard>
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent,
+  CardImage,
+} from "../components/ui/card";
+import Link from "next/link";
+import { games } from "../lib/GamesList";
+  
+const Games: NextPage = () => {
+    return (
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 mb-32 md:mb-64">
+        <Link
+            className="block group hover:border-primary hover:bg-primary-light rounded-xl"
+            href={`href`}
+            key={1}
+          >
+            <Card>
+              <div className="relative overflow-hidden h-[200px] md:h-[400px] w-full">
+                <CardImage
+                  className="absolute inset-0 object-cover transform group-hover:scale-110 transition-transform duration-300 ease-in-out"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle>{"text to 3D"}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>{"Image generation"}</CardDescription>
+              </CardContent>
+            </Card>
+          </Link>
+          <Link
+            className="block group hover:border-primary hover:bg-primary-light rounded-xl"
+            href={`href`}
+            key={2}
+          >
+            <Card>
+              <div className="relative overflow-hidden h-[200px] md:h-[400px] w-full">
+                <CardImage
+                  className="absolute inset-0 object-cover transform group-hover:scale-110 transition-transform duration-300 ease-in-out"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle>{"text to audio"}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>{"audio generation"}</CardDescription>
+              </CardContent>
+            </Card>
+          </Link>
       </div>
-    </div>
-  );
-};
+    );
+  }
 
-export default Home;
+export default Games;
 
+//text to 3d, text to audio
