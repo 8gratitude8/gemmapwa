@@ -1,16 +1,14 @@
-# Fun Games PWA 🎮
+# ODSC Hackathon 🎮
 
-## Overview 🌐
+## Project Description 🌐
 
-Fun Games PWA is a Progressive Web App that brings a range of games right to your fingertips. The PWA is powered by [ThirdWeb](https://thirdweb.com) for blockchain features and [Firebase](https://firebase.google.com/) for back-end services.
+Cutting-edge multimedia platform that combines the power of 3D artwork generation, music composition, and intelligent search capabilities. Users are able to seamlessly generate 3D artwork and music, while the system provides intelligent filtering and search functionalities for text-to-image, text-to-audio, and even image-to-text queries. All data is stored and made searchable using the Weaviate database, ensuring efficient searchability, content generation, and seamless minting of the created assets. This project aims to offer a comprehensive solution for content creation, exploration, and monetization, bridging the worlds of visual arts and music with advanced AI-powered search and generation features.. The PWA is powered by [ThirdWeb](https://thirdweb.com) for blockchain features and [Firebase](https://firebase.google.com/) for back-end services.
 
 ## Features 🌟
 
-- **Multiple Games**: A wide variety of games to keep you entertained and engaged.
-- **Fully Responsive**: Designed to provide an optimal viewing experience across a wide range of devices.
-- **Premium In-Game Features**: Purchase coins to unlock special features and gain in-game advantages.
-- **Real-Time Updates**: Always stay updated with new games and features.
-
+- **Multimodal Search**: A wide variety of games to keep you entertained and engaged.
+- **AR 3D/Music Generation**: Designed to provide an optimal viewing experience across a wide range of devices.
+  
 ## Technology Stack 🛠️
 
 - Front-end: Next.js, Tailwind CSS
@@ -24,8 +22,8 @@ This app complies with all standard security protocols. Coins purchased within t
 
 ## Future Enhancements 🚀
 
-- New Games: We're constantly working to add new games.
-- Social Features: Soon you'll be able to compete with friends.
+- Add NFT minting
+
 
 ## Disclaimer ⚠️
 
@@ -37,4 +35,4 @@ For any queries or feedback, feel free to open a issue.
 
 ---
 
-*Happy Gaming! 🎮*
+*Happy Creating! 🎮*
