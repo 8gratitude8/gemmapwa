@@ -14,7 +14,7 @@ const Games: NextPage = () => {
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 mb-32 md:mb-64">
         <Link
             className="block group hover:border-primary hover:bg-primary-light rounded-xl"
-            href={`/game`}
+            href={`/games`}
             key={1}
           >
             <Card>
