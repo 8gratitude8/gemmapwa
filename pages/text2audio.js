@@ -189,6 +189,7 @@ export default function Audio() {
             placeholder="Type your prompt here"
           />
           <Button
+            style={{ marginTop: "10px" }}
             onClick={() => {
               genMusic();
             }}

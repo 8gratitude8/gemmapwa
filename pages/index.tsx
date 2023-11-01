@@ -21,6 +21,7 @@ const Games: NextPage = () => {
               <div className="relative overflow-hidden h-[200px] md:h-[400px] w-full">
                 <CardImage
                   className="absolute inset-0 object-cover transform group-hover:scale-110 transition-transform duration-300 ease-in-out"
+                  src="/3d.png"
                 />
               </div>
               <CardHeader>
@@ -40,6 +41,7 @@ const Games: NextPage = () => {
               <div className="relative overflow-hidden h-[200px] md:h-[400px] w-full">
                 <CardImage
                   className="absolute inset-0 object-cover transform group-hover:scale-110 transition-transform duration-300 ease-in-out"
+                  src="/music.png"
                 />
               </div>
               <CardHeader>
