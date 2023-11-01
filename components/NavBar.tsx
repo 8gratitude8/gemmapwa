@@ -5,6 +5,8 @@ import {
   PersonIcon,
   AvatarIcon,
   VideoIcon,
+  MagnifyingGlassIcon,
+  TransformIcon,
 } from "@radix-ui/react-icons";
 import { useEffect } from "react";
 import { doc, getDoc, setDoc } from "firebase/firestore";
@@ -42,17 +44,17 @@ export default function Navbar() {
     <div className="flex justify-between items-center p-4 fixed bottom-0 left-0 right-0 bg-background dark:bg-gray-900">
       <Link href="/">
         <div className="flex flex-col justify-between items-center cursor-pointer">
-          <HomeIcon className="w-12 h-12 text-foreground dark:text-white" />
+          <TransformIcon className="w-12 h-12 text-foreground dark:text-white" />
           <p className="text-xs text-center text-foreground dark:text-white">
-            Home
+            Generate
           </p>
         </div>
       </Link>
       <Link href="/games">
         <div className="flex flex-col justify-between items-center cursor-pointer">
-          <VideoIcon className="w-12 h-12 text-foreground dark:text-white" />
+          <MagnifyingGlassIcon className="w-12 h-12 text-foreground dark:text-white" />
           <p className="text-xs text-center text-foreground dark:text-white">
-            Games
+            Search
           </p>
         </div>
       </Link>
